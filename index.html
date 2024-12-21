@@ -30,6 +30,27 @@
     text-decoration: underline;
 }
 
+
+.hero-cta {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+    justify-content: center; /* Center align buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+  }
+
+   /* Mobile styles */
+   @media (max-width: 600px) {
+    .hero-cta {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 15px; /* Increase spacing between buttons for clarity */
+    }
+	.button-accent {
+    margin: 10px;
+    padding: 10px 40px; /* Adjust as needed */
+    text-align: center;
+
+}
+
 </style>
 
 </head>
@@ -74,7 +95,13 @@
 							<img class="" src="./dist/images/aristaLogo.png" alt="App preview" style="height:250px;">
 	                        <h1 class="hero-title mt-0">COMING SOON</h1>
 	                        <p class="hero-paragraph">Premium gold and silver bullion, trusted quality, launching soon!</p>
-	                        <div class="hero-cta"><a class="button button-shadow" href="mailto:INFO@ARISTAGOLD.COM">Mail Us</a><a class="button button-primary button-shadow" href="tel:97142256116">Contact Us</a></div>
+	                        <div class="hero-cta">
+								<a class="button button-shadow" href="mailto:INFO@ARISTAGOLD.COM">Mail Us</a>
+								<a class="button button-primary button-shadow" href="tel:97142256116">Contact Us</a>
+								<a class="button button-accent button-shadow" href="https://aristaweb.netlify.app/" style="margin : 10px;width: 50px; ">Live Rate</a>
+							  </div>
+							  
+							  
 						</div>
 						<div class="hero-app">
 							<div class="hero-app-illustration">
